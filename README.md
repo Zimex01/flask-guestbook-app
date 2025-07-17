@@ -6,7 +6,6 @@ A simple Flask-based guestbook web app where users can submit messages. The app 
 - Users can submit a name and message via a form.
 - Input validation to prevent malicious input.
 - Dockerized for portability.
-- Deployed to AWS Elastic Beanstalk.
 - Tested on Windows and Linux.
 
 ## Setup
@@ -20,8 +19,6 @@ A simple Flask-based guestbook web app where users can submit messages. The app 
 Run pytest tests/test_main.py to execute unit tests.
 
 ## Deployment
-1. Install AWS Elastic Beanstalk CLI (pip install awsebcli).
-2. Configure AWS credentials (AWS Access Key ID and Secret Access Key).
 3. Run the deployment script:
    - Linux: bash scripts/deploy.sh
    - Windows: powershell scripts/deploy.ps1
@@ -32,11 +29,9 @@ Run pytest tests/test_main.py to execute unit tests.
 - *Source Control*: Git, GitHub
 - *Security*: Input sanitization
 - *Containerization*: Docker
-- *Cloud*: AWS Elastic Beanstalk
 
 ## Security
 - User inputs are sanitized to remove special characters and limit length.
 
 ## Testing on Windows/Linux
-- *Windows*: Use PowerShell or WSL to run Docker and deployment scripts.
 - *Linux*: Use Bash in an Ubuntu VM or WSL.
