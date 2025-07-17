@@ -1,7 +1,7 @@
 from flask import Flask, request, render_template, redirect, url_for
 import re
 
-app = Flask(_name_)
+app = Flask(__name__)
 
 # In-memory storage for guestbook entries
 guestbook = []
@@ -25,5 +25,5 @@ def add_entry():
         guestbook.append({'name': name, 'message': message})
     return redirect(url_for('index'))
 
-if _name_ == '_main_':
+if __name__== '__main__':
     app.run(host='0.0.0.0', port=5000)
