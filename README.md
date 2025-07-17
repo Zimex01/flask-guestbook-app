@@ -35,3 +35,6 @@ Run pytest tests/test_main.py to execute unit tests.
 
 ## Testing on Windows/Linux
 - *Linux*: Use Bash in an Ubuntu VM or WSL.
+
+## Author
+Dimitrije Drobac - www.linkedin.com/in/dimitrijedrobac
