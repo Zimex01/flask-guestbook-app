@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Guestbook App</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Guestbook</h1>
+    <form method="POST" action="/add">
+        <label>Name: <input type="text" name="name" required></label><br>
+        <label>Message: <textarea name="message" required></textarea></label><br>
+        <button type="submit">Add Entry</button>
+    </form>
+    <h2>Entries</h2>
+    <ul>
+        {% for entry in entries %}
+            <li><strong>{{ entry.name }}</strong>: {{ entry.message }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
