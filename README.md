@@ -1,12 +1,12 @@
-# Flask Guestbook App with Docker and AWS
+# Flask Guestbook App with Docker
 
-A simple Flask-based guestbook web app where users can submit messages. The app is containerized with Docker, versioned with Git, and deployed to AWS Elastic Beanstalk. Includes basic input sanitization for security.
+A simple Flask-based guestbook web app where users can submit messages. The app is containerized with Docker, versioned with Git, and deployed to local. Includes basic input sanitization for security.
 
 ## Features
 - Users can submit a name and message via a form.
 - Input validation to prevent malicious input.
 - Dockerized for portability.
-- Tested on Windows and Linux.
+- Tested on Linux.
 
 ## Setup
 1. Clone the repo: git clone https://github.com/Zimex01/flask-guestbook-app
